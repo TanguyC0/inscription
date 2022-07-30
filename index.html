@@ -9,19 +9,48 @@
     <title>Document</title>
 </head>
 <body>
-    <section>
-        <h1>tttttttttttttttttt</h1>
-    </section>
-    <section class="section-form">
-        <p class="promo-block"><b>Try is free 7 days</b>then $20/mo. thereafter</p>
-        <form action="#" class="form-block">
-            <input type="text" name="Name" id="Name" placeholder="Name">
-            <input type="text" name="Last-Name" id="Last-Name" placeholder="Last Name">
-            <input type="email" name="Email-Address" id="Email-Address" placeholder="Email Address">
-            <input type="password" name="password" id="password" placeholder="password">
-            <input type="submit" value="CLAIM YOUR FREE TRIAL" class="submit">
-            <p class="text-terme-service">By clicking the button, you are agreeing to our<a href="" class="terms-services">Terms ans Services</a></p>
-        </form>
-    </section>
+        <section>
+            <div class="description-block">
+                <h1 class="title-description">Learn to code by watching others</h1>
+                <p class="text-description">
+                    See how experienced developers solve problems in real-time.
+                    watching scripted tutorials is great, but understanding how
+                    developers think is invaluable.
+                </p>
+            </div>
+        </section>
+        <section>
+            <p class="promo-block">
+                <b class="promo-block--bold">Try is free 7 days </b> 
+                then $20/mo. thereafter
+            </p>
+            <form action="#" name="Forms" class="form-block" onsubmit="return validateForm(); return false">
+                <input type="text" name="Name" class="saisie" id="Name" placeholder="Name" >
+                <input type="text" name="Last-Name" class="saisie" id="Last-Name" placeholder="Last Name" >
+                <input type="email" name="Email-Address" class="saisie" id="Email-Address" placeholder="Email Address" >
+                <input type="password" name="password" class="saisie" id="password" placeholder="password" >
+                <input type="submit" value="CLAIM YOUR FREE TRIAL" class="submit">
+                <p class="text-terme-service">By clicking the button, you are agreeing to our<a href="" class="terms-services">Terms and Services</a></p>
+            </form>
+        </section>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Modal Header</h2>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div>
+    </div>
+  
+  </div>
 </body>
 </html>
