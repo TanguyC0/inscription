@@ -65,13 +65,7 @@ section
         color: rgb(255, 122, 122);
         text-decoration: none;
         font-weight: 600;
-    }
-
-    .submit
-    {
-        background-color: rgb(56, 204, 140);
-        color:white;
-        font-weight: 700;
+        font-size: 1em;
     }
 
     input
@@ -83,6 +77,14 @@ section
         padding-left: 2em;
         width: 100%;
         outline: none;
+    }
+
+    .submit
+    {
+        background-color: rgb(56, 204, 140);
+        color:white;
+        font-weight: 700;
+        width: 110%; /*why not 100% ? it's a input but react diferently of other*/
     }
 
     .saisie
@@ -104,6 +106,7 @@ section
 
     .saisie:invalid 
     {
+        background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50%;
         border-color: red;
         outline-color: red;
     }
