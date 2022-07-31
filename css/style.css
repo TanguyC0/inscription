@@ -21,6 +21,7 @@ body
     max-width: 100vw;
 
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
@@ -249,3 +250,41 @@ section
     border-radius: 5px;
     padding: 0.5em;
   }
+
+  /* --------------------------- media ---------------------------*/
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    section {
+        text-align: center;
+        margin-top: 5em;
+    }
+
+    .title-description
+    {
+        font-weight: 700;
+        font-size: 2.1em;
+    }
+
+    .text-description
+    {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    .promo-block
+    {
+        flex-direction: column;
+        padding: 1em 0;
+    }
+
+    .form-block
+    {
+        padding: 1em 3em;
+    }
+}
