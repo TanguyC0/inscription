@@ -30,7 +30,7 @@
 * Le responsive, soit le fait d’adapter son design en mode téléphone. Pour cela, il suffit de diminuer sa fenêtre de navigateur, et de corriger les bugs grâce aux **media queries**
 * L’addition de JavaScript: L’utilisateur aimerait recevoir un message d’erreur, sous forme d’alerte navigateur, s’il valide le formulaire avec un champ vide
 
-### b : Bonus
+#### b : Bonus
 
 * Améliorer le formulaire:
     * Que la page ne se recharge pas quand on clique sur le bouton submit

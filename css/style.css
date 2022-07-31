@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 
 *
 {
@@ -78,6 +81,7 @@ section
         margin: 0.5em;
         padding-left: 2em;
         width: 100%;
+        outline: none;
     }
 
     .saisie
@@ -97,6 +101,11 @@ section
         color: rgb(185, 182,211);
     }
 
+    .saisie:invalid 
+    {
+        border-color: red;
+        outline-color: red;
+    }
 /* --------------------------- promo ---------------------------*/
     .promo-block
     {
@@ -136,8 +145,8 @@ section
     .title-description
     {
         display: flex;
-        font-weight: 600;
-        font-size: 5em;
+        font-weight: 700;
+        font-size: 4.4em;
         line-height: 1;
         margin-bottom: 0.5em;
     }
@@ -145,7 +154,7 @@ section
     .text-description
     {
         display: flex;
-        font-size: 1.6em;
+        font-size: 1.4em;
         font-weight: 500;
     }
 
@@ -174,7 +183,8 @@ section
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    border-radius: 10px; 
+    width: 30em;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -209,15 +219,33 @@ section
   }
   
   .modal-header {
-    padding: 2px 16px;
+    padding: 1em 2em;
     background-color: #5cb85c;
     color: white;
+    border-radius: 10px 10px 0 0; 
   }
+
+  .modal-header>h2
+    {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
   
-  .modal-body {padding: 2px 16px;}
+  .modal-body {padding: 1em 2em;}
   
   .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 2em;
     color: white;
+    border-top: 1px solid #000;
+  }
+
+  .modal-button-close
+  {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 0.5em;
   }

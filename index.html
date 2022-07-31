@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
     <title>Document</title>
@@ -22,15 +23,15 @@
         <section>
             <p class="promo-block">
                 <b class="promo-block--bold">Try is free 7 days </b> 
-                then $20/mo. thereafter
+                &nbsp;then $20/mo. thereafter
             </p>
-            <form action="#" name="Forms" class="form-block" onsubmit="return validateForm(); return false">
+            <form action="#" name="Forms" class="form-block" onsubmit="return validateForm(popup)">
                 <input type="text" name="Name" class="saisie" id="Name" placeholder="Name" >
-                <input type="text" name="Last-Name" class="saisie" id="Last-Name" placeholder="Last Name" >
-                <input type="email" name="Email-Address" class="saisie" id="Email-Address" placeholder="Email Address" >
+                <input type="text" name="Last-Name" class="saisie" id="Last-Name" placeholder="Last Name">
+                <input type="email" name="Email-Address" class="saisie" id="Email-Address" placeholder="Email Address">
                 <input type="password" name="password" class="saisie" id="password" placeholder="password" >
                 <input type="submit" value="CLAIM YOUR FREE TRIAL" class="submit">
-                <p class="text-terme-service">By clicking the button, you are agreeing to our<a href="" class="terms-services">Terms and Services</a></p>
+                <p class="text-terme-service">By clicking the button, you are agreeing to our<a href="" class="terms-services">&nbsp;Terms and Services</a></p>
             </form>
         </section>
 <!-- The Modal -->
@@ -39,15 +40,14 @@
     <!-- Modal content -->
     <div class="modal-content">
       <div class="modal-header">
-        <span class="close">&times;</span>
+        <span class="close" name="close">&times;</span>
         <h2>Modal Header</h2>
       </div>
       <div class="modal-body">
         <p>Some text in the Modal Body</p>
-        <p>Some other text...</p>
       </div>
       <div class="modal-footer">
-        <h3>Modal Footer</h3>
+        <button type="button" name="close" class="modal-button-close">close</button>
       </div>
     </div>
   
