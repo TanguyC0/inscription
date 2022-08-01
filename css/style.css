@@ -84,7 +84,16 @@ section
         background-color: rgb(56, 204, 140);
         color:white;
         font-weight: 700;
-        width: 110%; /*why not 100% ? it's a input but react diferently of other*/
+        width: 100%; /*why not 100% ? it's a input but react diferently of other*/
+        padding-right: 1em;
+        padding-left: 1em;
+        box-sizing: content-box;
+    }
+
+    .submit:hover
+    {
+        background-color: rgb(60, 182, 129);
+        cursor: pointer;
     }
 
     .saisie
@@ -272,6 +281,8 @@ section
     {
         font-weight: 700;
         font-size: 2.1em;
+        margin-left:auto ;
+        margin-right: auto;
     }
 
     .text-description

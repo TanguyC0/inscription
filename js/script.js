@@ -79,10 +79,8 @@ function validateForm(popup) {
             return false;
         }
     }
-    console.log("Form is valid");
-    console.log(document.forms["Forms"]["Email-Address"].value);
     popup.openModal(true,document.forms["Forms"]["Email-Address"].value);
- 
+    return false;
 }
 
 let popup = new Modal();
