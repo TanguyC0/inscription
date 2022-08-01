@@ -106,7 +106,7 @@ section
 
     .saisie:invalid 
     {
-        background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50%;
+        background: url("../img/ressource/icon-error.svg") no-repeat 95% 50%;
         border-color: red;
         outline-color: red;
     }
